@@ -13,9 +13,9 @@ function setup() {
 
 function draw() {
   // put drawing code here
-    
+    noStroke();
     fill(random(0,255),random(0,255),random(0,255)), 25;
-    ellipse(x, y, 80, 80);
+    ellipse(x, y, 2, 2);
 move();
 }
 
