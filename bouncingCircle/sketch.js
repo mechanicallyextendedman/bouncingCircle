@@ -1,7 +1,11 @@
 var x = 0;
 var y = 0;
-var directionX = 5;
-var directionY = 5;
+var directionX = 3;
+var directionY = 3;
+var redRange = 150;
+var greenRange = 150;
+var blueRange = 150;
+var value = 10;
 
 
 function setup() {
@@ -14,9 +18,10 @@ function setup() {
 function draw() {
   // put drawing code here
     noStroke();
-    fill(random(0,255),random(0,255),random(0,255)), 25;
-    ellipse(x, y, 2, 2);
+    fill(255, 255, 255, 25);
+    ellipse(x, y, 5, 5);
 move();
+colChange();
 }
 
 
@@ -29,5 +34,11 @@ function move(){
     }
     x = x + directionX;
     y = y + directionY;
+}
 
+function colChange(){
+  if(x = width && y = height){
+    redRange = redRange - value;
+    greenRange = greenRange + value;
+    blueRange = blueRange - value;  
 }
