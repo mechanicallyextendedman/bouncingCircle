@@ -42,3 +42,4 @@ function colChange(){
     greenRange = greenRange + value;
     blueRange = blueRange - value;  
 }
+}
