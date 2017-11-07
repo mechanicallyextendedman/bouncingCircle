@@ -37,7 +37,7 @@ function move(){
 }
 
 function colChange(){
-  if(x = width && y = height){
+  if(x == width && y == height){
     redRange = redRange - value;
     greenRange = greenRange + value;
     blueRange = blueRange - value;  
