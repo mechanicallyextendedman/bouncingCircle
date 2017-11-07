@@ -18,7 +18,7 @@ function setup() {
 function draw() {
   // put drawing code here
     noStroke();
-    fill(255, 255, 255, 25);
+    fill(redRange, greenRange, blueRange, 25);
     ellipse(x, y, 5, 5);
 move();
 colChange();
