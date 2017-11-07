@@ -5,7 +5,7 @@ var directionY = 3;
 var redRange = 150;
 var greenRange = 150;
 var blueRange = 150;
-var value = 10;
+var val = 10;
 
 
 function setup() {
@@ -38,8 +38,8 @@ function move(){
 
 function colChange(){
   if(x == width && y == height){
-    redRange = redRange - value;
-    greenRange = greenRange + value;
-    blueRange = blueRange - value;  
+    redRange = redRange - val;
+    greenRange = greenRange + val;
+    blueRange = blueRange - val;  
 }
 }
